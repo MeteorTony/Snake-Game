@@ -8,8 +8,8 @@ const gameBoard = document.getElementById("game-board");
 
 function main(currentTime) {
   if (gameOver) {
-    if (confirm("You lost. Press ok to restart.")) {        // refresh page
-      window.location = "/";
+    if (confirm("You lost. Press ok to restart.")) {        
+        window.location.reload();           // refresh page
     }
     return;     // terminate game
   }
